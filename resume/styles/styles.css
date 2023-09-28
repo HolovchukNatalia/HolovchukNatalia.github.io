@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: Helvetica, serif;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.page-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.l-side {
+    
+    width: 300px;
+    padding-top: 25px;
+    background-color: #3a5e90;
+    color: white;
+}
+.r-side {
+    width: calc(100% - 300px);
+    background-color: purple;
+
+}
+.photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.personal-info-block{
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.personal-info-block__title {
+    padding-bottom: 25px;
+    border-bottom: 2px solid #fff;
+    font-size: 22px;
+} 
+.personal-info-block__content {
+    padding-top: 25px;
+}
+.content-item:not(:last-child) {
+padding-bottom: 15px;
+}
+
+.content-item span {
+    display: block;
+}
+
+.content-item span:first-child, 
+.f-bold {
+    font-weight:  bold; 
+}
+
+.d-flex span {
+    display: flex;
+}
+.content-item.d-flex {
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+.r-personal-info-block{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+.r-personal-info-block__title {
+    padding-bottom: 15px;
+    border-bottom: 2px solid white;
+    font-size: 30px;
+} 
+.f-bold{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid white;
+    font-size: 30px;
+}
+.f-bold2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid white;
+    font-size: 20px;
+}
+.f-bold3{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid white;
+    font-size: 20px;
+}
+.f-bold4{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid white;
+    font-size: 20px;
+}
+.f-bold5{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid white;
+    font-size: 20px;
+}
+.r-content-item {
+    padding-top: 15px;
+    display: inline block;
+}
+
+.r-content-item.d-flex {
+    margin-top: 0px;
+    display: inline block;
+    float: right;
+}
+
+
+
+
+
+
