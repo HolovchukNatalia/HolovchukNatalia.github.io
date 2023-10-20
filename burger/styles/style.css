@@ -122,8 +122,8 @@ h1 {
 
 .click {
     position: absolute;
-    top: 465px;
-    right: 25.2%;
+   	right:0;
+	top: 410px;
     display: block;
     padding: 20px 60px;
     background-color: black;
