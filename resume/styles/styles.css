@@ -65,6 +65,7 @@ padding-bottom: 15px;
     display: flex;
 }
 .content-item.d-flex {
+    display: flex;
     justify-content: space-between;
     padding-right: 20px;
 }
@@ -124,7 +125,6 @@ padding-bottom: 15px;
     display: inline block;
     float: right;
 }
-
 
 
 
