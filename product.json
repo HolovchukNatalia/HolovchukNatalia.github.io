@@ -1,0 +1,53 @@
+{
+    "products": [
+        {
+            "img": "/images/hat.png",
+            "name": "Cap",
+            "description": "lack and white sport cap",
+            "price": 18.15,
+            "rating": 5,
+            "favorite": true
+        },
+        {
+            "img": "/images/glasses.png",
+            "name": "Glasses",
+            "description": "Metal bridge sunglasses",
+            "price": 89.95,
+            "rating": 0,
+            "favorite": true
+        },
+        {
+            "img": "/images/body.png",
+            "name": "Body",
+            "description": "Green baby romper",
+            "price": 20.40,
+            "rating": 4,
+            "favorite": true
+        },
+        {
+            "img": "/images/pants.png",
+            "name": "Pants",
+            "description": "Mid-rise slim cropped fit jeans",
+            "price": 40.00,
+            "rating": 0,
+            "favorite": true
+        },
+        {
+            "img": "/images/earrings.png",
+            "name": "Earrings",
+            "description": "Red dangle earrings",
+            "price": 29.95,
+            "rating": 5,
+            "favorite": true
+        },
+        {
+            "img": "/images/slippers.png",
+            "name": "Slippers",
+            "description": "Baby shoes with laces",
+            "price": 30.60,
+            "rating": 0,
+            "favorite": true
+        }
+    ]
+
+}
