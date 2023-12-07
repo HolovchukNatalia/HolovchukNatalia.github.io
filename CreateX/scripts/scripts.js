@@ -69,8 +69,6 @@ let mainSwiper = new Swiper(".main-swiper", {
 });
 
 
-
-
 async function product () {
 
     const requestURL = 'https://holovchuknatalia.github.io/product.json'
@@ -78,68 +76,70 @@ async function product () {
 
     const response = await fetch(request)
     const cardArrivals = await response.json()
-	console.log (cardArrivals)
+ productCard (cardArrivals)
 }
 
 function productCard (obj) {
-    const section = document.querySelector('swiper-wrapper')
+    const section = document.getElementById('swiper-wrapper-js')
+    console.log(section)
     const products = obj.products
 
     for(const product of products) {
-        const cardProduct = document.createElement('div')
-		cardProduct.className = 'card-arrivals swiper-slide';
+    console.log(product)
 
-		const arrivalsCard = document.createElement('div')
-		arrivalsCard.className = 'arrivals-card';
+    const cardProduct = document.createElement('div')
+	cardProduct.className = 'card-arrivals swiper-slide';
 
-		const cardImg = document.createElement('img')
-		cardImg.src = product.img
-		cardImg.className = 'card-img-arrivals';
+	const arrivalsCard = document.createElement('div')
+	arrivalsCard.className = 'arrivals-card';
 
-		const btnFavorite = document.createElement('button')
-		btnFavorite.className = 'btn-favorite';
+	const cardImg = document.createElement('img')
+	cardImg.src = product.img
+	cardImg.className = 'card-img-arrivals';
 
-		const cardText = document.createElement('div')
-		cardText.className = 'card-text';	
-		
-		const cardDescription = document.createElement('p')
-        cardDescription.textContent = product.description
-		cardDescription.className = 'card-title';
+	const btnFavorite = document.createElement('button')
+	btnFavorite.className = 'btn-favorite';
 
-		const cardPrice = document.createElement('span')
-        cardPrice.textContent = product.price
-		cardPrice.className = 'arrivals-card-price'
+	const cardText = document.createElement('div')
+	cardText.className = 'card-text'; 
+	
+	const cardDescription = document.createElement('p')
+	cardDescription.textContent = product.description
+	cardDescription.className = 'card-title';
 
-	if (product.rating > 0) {
-		const ratingDiv = document.createElement('div')
-		ratingDiv.className = 'card-rating'
-		for (let i = 0; i < 5; i++) {
-			if (i < product.rating) {
-				const starDiv = document.createElement('div')
-				starDiv.className = 'rating-img rating-active';
-				ratingDiv.append(starDiv)
-			} else {
-				const starDiv = document.createElement('div')
-				starDiv.className = 'rating-img';
-				ratingDiv.append(starDiv)
-			}
-		}
-	}
-
-		cardText.append(cardPrice)
-		cardText.append(cardDescription)
-		cardProduct.append(cardText)
-		arrivalsCard.append(btnFavorite)
-		arrivalsCard.append(cardImg)
-        arrivalsCard.append(ratingDiv)
-        cardProduct.append(arrivalsCard)
-        swiper-wrapper.append(cardProduct) 
+	const cardPrice = document.createElement('span')
+	cardPrice.textContent = product.price +  '$'
+	cardPrice.className = 'arrivals-card-price'
+  
+  	const ratingDiv = document.createElement('div')
+  	if (product.rating > 0) {
+   
+   	ratingDiv.className = 'card-rating'
+   	for (let i = 0; i < 5; i++) {
+    if (i < product.rating) {
+     const starDiv = document.createElement('div')
+     starDiv.className = 'rating-img rating-active';
+     ratingDiv.append(starDiv)
+    } else {
+     const starDiv = document.createElement('div')
+     starDiv.className = 'rating-img';
+     ratingDiv.append(starDiv)
     }
+   }
+  }
 
+  	arrivalsCard.append(ratingDiv)
+  	arrivalsCard.append(btnFavorite)
+    arrivalsCard.append(cardImg)
+	cardProduct.append(arrivalsCard)
+	cardText.append(cardPrice)
+  	cardText.append(cardDescription)
+  	cardProduct.append(cardText)
+    section.append(cardProduct) 
+    }
 }
 
 product();
-
 
 
 
