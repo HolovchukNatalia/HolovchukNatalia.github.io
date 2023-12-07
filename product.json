@@ -47,6 +47,22 @@
             "price": 30.60,
             "rating": 0,
             "favorite": true
+        },
+        {
+            "img": "/images/earrings.png",
+            "name": "Earrings",
+            "description": "Red dangle earrings",
+            "price": 29.95,
+            "rating": 5,
+            "favorite": true
+        },
+        {
+            "img": "/images/slippers.png",
+            "name": "Slippers",
+            "description": "Baby shoes with laces",
+            "price": 30.60,
+            "rating": 0,
+            "favorite": true
         }
     ]
 
